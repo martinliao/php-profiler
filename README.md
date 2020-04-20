@@ -9,11 +9,7 @@ Supported profilers:
  - [Tideways] v4.x - PHP >= 7.0
  - [UProfiler] - PHP >= 5.3, < PHP 7.0
  - [XHProf] - PHP >= 5.3, < PHP 7.0
-
-[XHProf]: https://pecl.php.net/package/xhprof
-[Tideways]: https://tideways.io/profiler/downloads
-[Tideways XHProf]: https://github.com/tideways/php-xhprof-extension
-[UProfiler]: https://github.com/FriendsOfPHP/uprofiler
+ - [SPX] - PHP >= 5.6, PHP >= 7.0
 
 This profiling library will auto-detect what you have installed and use that.
 
@@ -78,6 +74,19 @@ brew install kabel/pecl/php-tideways-xhprof
 
 [kabel/pecl]: https://github.com/kabel/homebrew-pecl
 [glensc/tap]: https://github.com/glensc/homebrew-tap
+
+### SPX Profiler
+
+To install [SPX] profiler, see their [installation documentation][spx-install].
+
+Alternatively on `brew` (macOS) you can use package from [glensc/tap] tap:
+
+```
+brew install glensc/tap/php@7.1-spx
+```
+
+[glensc/tap]: https://github.com/glensc/homebrew-tap
+[spx-install]: https://github.com/NoiseByNorthwest/php-spx#installation
 
 ## Usage
 
@@ -180,3 +189,8 @@ calls for finishing profiling and storing the data.
 
 [1]: https://packagist.org/packages/perftools/xhgui-collector
 [2]: src/ProfilingFlags.php
+[XHProf]: https://pecl.php.net/package/xhprof
+[Tideways]: https://tideways.io/profiler/downloads
+[Tideways XHProf]: https://github.com/tideways/php-xhprof-extension
+[UProfiler]: https://github.com/FriendsOfPHP/uprofiler
+[SPX]: https://github.com/NoiseByNorthwest/php-spx
